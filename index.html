@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer For Events</title>
+    <link rel="stylesheet" href="mycss.css">
+    <link rel="stylesheet" href="https://unpkg.com/css.gg@2.0.0/icons/css/stopwatch.css">
+</head>
+<body> 
+    <h1>
+        <strong> Stopwatch Timer</strong>
+    </h1>
+
+    <div class="container">
+        <div class="Timer">00:00:00</div>
+        <div class="controls"> 
+            <button class="btn" id="startBtn">Start</button>
+            <button class="btn" id="pauseBtn">Pause</button>
+            <button class="btn" id="resetBtn">Reset</button>
+        </div>
+    </div> 
+    <div id="day"></div>
+    <div id="time"></div>
+    <div id="date"></div> 
+    <div class="row">
+        <form id="additem">     
+            <input name="newitem" id="newitem" type="text" maxlength="100" placeholder="Task" autofocus required>
+            <button type="submit" id="submit-item" class="ui button">Submit Task</button>   
+        </form>
+    </div>
+    <section class="list">
+        <ul id="listul"></ul>
+    </section>
+    <div>
+        <section>
+            <h2>Completed Tasks</h2>
+            <p id="done"></p>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
