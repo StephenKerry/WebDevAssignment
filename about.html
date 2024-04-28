@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer For Events</title>
+    <link rel="stylesheet" href="mycss.css"> 
+    
+        <ul>
+            <li><a href="index.html" target="_blank">index</a></li>
+            <li><a href="images.html" target="_blank">Clock Images</a></li>
+        </ul>
+    
+</head> 
+<body class="body2"> 
+
+    <div class="readMoreContainer"> 
+        <div class="container2">  
+            <section>
+                <h1 class="heading2">Clocks</h1>
+                <p>
+                    Click read more to see an interesting fact about clocks! </p>
+                    <button class="btn1">Read More...</button>
+                
+                <div class="more1">
+                    <h2>Did You Know?</h2>
+                    <p>
+                        Before alarm clocks, there was a profession called a knocker-upper who would go around and knock on your door until you woke up - genealogyresearchnetwork.com
+                    </p> 
+                    <img src="images/knocker upper.jpg" alt="knocker-upper" class="ui fluid image">
+                </div>
+            </section>
+        </div>
+    </div> 
+    <div class="clock-comparison">
+        <h2>Clock Comparison Tool</h2>
+        <div id="clock-options"> 
+            <img src="analog.webp" alt="Analog Clock" class = "clock-image">
+            <select id="clock1">
+                <option value="1">Analog Clock Features</option> 
+                <option value="2">Simple straight hands</option> 
+                <option value="3">Traditional hour and minute hands</option> 
+                <option value="4"> Plastic Frames</option> 
+                <option value="5">Round Dial</option> 
+                
+            </select> 
+            <img src="shopping.webp" alt="Digital Clock"  class = "clock-image">
+            <select id="clock2">
+                <!-- Options for clock 2 --> 
+                <option value="1">Digital Clock Features</option> 
+                <option value="2">Date Display</option> 
+                <option value="3">LED Display</option> 
+                <option value="4"> Battery/Solar Powered</option> 
+                <option value="5">Plug In/ Electric</option> 
+                
+            </select>
+        </div>
+        <div id="comparison-table">
+            <!-- Comparison table will be generated dynamically -->
+        </div>
+    </div> 
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>

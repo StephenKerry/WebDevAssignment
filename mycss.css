@@ -1,5 +1,8 @@
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     background-color: aquamarine; 
     color: white; 
     text-align: center;
@@ -45,4 +48,161 @@ h1{
 	background: lightgrey;
   padding:1em;
 }
+.body2{ 
+    padding: 1rem; 
+    background-color: olivedrab; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
 
+}
+
+.readMoreContainer{ 
+    display: flex; 
+    flex-direction: column; 
+    color: blanchedalmond; 
+
+} 
+
+.container2{ 
+    padding: 2rem; 
+    background-color: brown; 
+    border-radius: 4px; 
+    box-shadow: 12px; 
+
+} 
+
+.read-more-btn{ 
+    color: yellow; 
+
+} 
+
+.readMoreText{ 
+    display: none; 
+
+} 
+
+.readMoreText--Show{ 
+    display: inline;
+} 
+
+.heading2{
+    font-style: italic;
+    color: goldenrod;
+    font-size: 3em;
+  } 
+
+  .more1 {
+  display: none;
+} 
+
+.imagehead{ 
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+} 
+
+#gallery a {
+    text-decoration: none; 
+} 
+
+#gallery img {
+    max-width: 100%; 
+    height: auto; 
+    transition: all 3s; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    margin: 10px; 
+
+}
+
+
+#gallery {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-gap: 20px; 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    border: solid navy;
+    
+} 
+
+.clock-comparison {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.clock-options {
+    margin-bottom: 10px;
+}
+
+select {
+    margin-right: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+} 
+
+.completed-task {
+    animation: slideIn 0.5s ease forwards;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  
+
+  .more1 {
+    display: none;
+  }
+
+  .btn1{ 
+    font-size: 16px;
+    border-radius: 3px;
+    background-color: lightgrey;
+    border: 1px solid grey;
+    box-shadow: 2px 2px teal;
+    cursor: pointer;
+
+  } 
+
+  .btn1:hover {
+    background-color: yellow;
+  }
+  
+  .btn1:active {
+    box-shadow: none;
+  }
+  .clock-image {
+    width: 200px; 
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+
+.clock-image:hover {
+    transform: scale(1.1); 
+}

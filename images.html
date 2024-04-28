@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clocks Gallery</title>
+
+<link href="mycss.css" rel="stylesheet">
+<link rel="stylesheet" href="css/lightgallery-bundle.min.css">
+</head>
+<body>
+<div id="container">
+ <header class="imagehead">
+  <h1>Clock Images</h1> 
+ </header> 
+ 
+    <ul>
+        <li><a href="index.html" target="_blank"> Clock index</a></li>
+        <li><a href="about.html" target="_blank">About Clocks</a></li>
+        
+    </ul>
+
+
+ <section id="gallery">
+    <a href="images/alarmclock.jpg" data-lg-size="600-600">
+        <img alt="alarmclock" src="images/thumbnail/alarmclock.jpg">
+    </a>
+    <a href="images/digital clock.jpg" data-lg-size="600-600">
+        <img alt="digitalclock" src="images/thumbnail/digital clock.jpg">
+    </a>
+    <a href="images/watch.jpg" data-lg-size="500-500">
+        <img alt="watch" src="images/thumbnail/watch.jpg">
+    </a>
+    <a href="images/sandtimer.jpg" data-lg-size="600-600">
+        <img alt="sandtimer" src="images/thumbnail/sandtimer.jpg">
+    </a>
+</section>
+ 
+</div>
+
+<div id="handlebars-container"></div> <!-- Container for Handlebars content -->
+
+<script src="js/lightgallery.min.js"></script>
+<script src="js/lg-thumbnail.min.js"></script>
+<script src="js/lg-zoom.min.js"></script>
+<script src="js/lg-fullscreen.min.js"></script>
+<script src="js/images.js"></script>  
+
+<script id="handlebars-demo" type="text/x-handlebars-template">
+    <div id="content"> 
+        This page is showcasing my use of {{name}}. I also wrote this sentence with the use of {{showcase}}.
+    </div>
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script> 
+<script> 
+const context = { 
+    "name" : "LightGallery",
+    "showcase" : "Handlebars"
+};
+
+let template = Handlebars.compile(document.querySelector('#handlebars-demo').innerHTML);
+let thecontent = template(context);
+
+document.querySelector('#handlebars-container').innerHTML = thecontent; // Append content to the container
+</script>
+
+</body>
+</html>
